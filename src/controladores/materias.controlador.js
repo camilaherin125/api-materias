@@ -96,7 +96,7 @@ const eliminarMateria = (req, res) => {
     materias.splice(index, 1);
 
     res.status(200).json({
-        mensaje: 'Materia eliminada'
+        mensaje: 'Materia eliminada correctamente'
     });
 
 };
