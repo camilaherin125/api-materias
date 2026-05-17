@@ -24,3 +24,6 @@ DELETE /api/materias/:id
 ## URL Producción
 
 https://api-materias.onrender.com
+## Autor
+
+Camila Gutierrez
