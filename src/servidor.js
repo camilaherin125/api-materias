@@ -4,8 +4,6 @@ require('dotenv').config();
 // Importa el framework Express
 const express = require('express');
 const cors = require('cors');
-const swaggerUi = require('swagger-ui-express');
-const swaggerSpec = require('../swagger');
 
 // Importa las rutas de materias
 const materiasRutas = require('./rutas/materias.rutas');
@@ -23,7 +21,6 @@ app.use(express.json());
 // Define la ruta principal para acceder a las materias
 // Todas las rutas de materias comenzarán con /api/materias
 app.use('/api/materias', materiasRutas);
-app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
 // Usa el middleware de manejo de errores
 app.use(manejarErrores);
